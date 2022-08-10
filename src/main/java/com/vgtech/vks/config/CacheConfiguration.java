@@ -48,6 +48,22 @@ public class CacheConfiguration {
             createCache(cm, com.vgtech.vks.domain.User.class.getName());
             createCache(cm, com.vgtech.vks.domain.Authority.class.getName());
             createCache(cm, com.vgtech.vks.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.vgtech.vks.domain.SecurityUser.class.getName());
+            createCache(cm, com.vgtech.vks.domain.SecurityUser.class.getName() + ".securityPermissions");
+            createCache(cm, com.vgtech.vks.domain.SecurityUser.class.getName() + ".securityRoles");
+            createCache(cm, com.vgtech.vks.domain.SecurityRole.class.getName());
+            createCache(cm, com.vgtech.vks.domain.SecurityRole.class.getName() + ".securityPermissions");
+            createCache(cm, com.vgtech.vks.domain.SecurityRole.class.getName() + ".securityUsers");
+            createCache(cm, com.vgtech.vks.domain.SecurityPermission.class.getName());
+            createCache(cm, com.vgtech.vks.domain.SecurityPermission.class.getName() + ".securityRoles");
+            createCache(cm, com.vgtech.vks.domain.SecurityPermission.class.getName() + ".securityUsers");
+            createCache(cm, com.vgtech.vks.domain.ParameterLookup.class.getName());
+            createCache(cm, com.vgtech.vks.domain.Member.class.getName());
+            createCache(cm, com.vgtech.vks.domain.MemberBank.class.getName());
+            createCache(cm, com.vgtech.vks.domain.MemberAssets.class.getName());
+            createCache(cm, com.vgtech.vks.domain.MemberLandAssets.class.getName());
+            createCache(cm, com.vgtech.vks.domain.Nominee.class.getName());
+            createCache(cm, com.vgtech.vks.domain.Society.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
